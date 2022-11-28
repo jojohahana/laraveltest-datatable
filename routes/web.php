@@ -1,5 +1,7 @@
 <?php
 
+// Jangan lupa nambahin Controller disini setiap abis create controller
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -14,9 +16,10 @@ use App\Http\Controllers\UserController;
 |
 */
 
-// Route::get('/users', function () {
-//     return view('user/index');
-// });
+Route::get('/dash', function () {
+    return view('_layout.masterlayout');
+});
+
 
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
