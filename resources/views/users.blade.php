@@ -21,8 +21,9 @@
             <tr>
                 <th>No</th>
                 <th>Name</th>
-                <th>Email</th>
-                <th width="50%">Action</th>
+                <th>No HP</th>
+                <!-- <th>Email</th> -->
+                <th width="30%">Action</th>
             </tr>
         </thead>
         <tbody>
@@ -42,7 +43,8 @@
         columns: [
             {data: 'id', name: 'id'},
             {data: 'name', name: 'name'},
-            {data: 'email', name: 'email'},
+            {data: 'num_hp', name: 'num_hp'},
+            // {data: 'email', name: 'email'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
     });

@@ -17,9 +17,10 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/dash', function () {
-    return view('_layout.masterlayout');
+    return view('testdash');
 });
 
 
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
+
