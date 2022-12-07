@@ -20,6 +20,7 @@ Route::get('/dash', function () {
     return view('testdash');
 });
 
+Route::get('sakit', [PermitController::class, 'getIzinSakit'])->name('formSakit');
 
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
