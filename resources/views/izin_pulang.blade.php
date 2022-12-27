@@ -45,7 +45,7 @@
 <!-- Form Start  -->
 <div class="container mt-11">
   <div class="mb-20">
-    <h2 class="text-4xl font-extrabold dark:text-white text-center">Form Pengajuan <span class="underline underline-offset-3 decoration-8 decoration-red-600 dark:decoration-yellow-600"> Izin Cuti </span></h3>
+    <h2 class="text-4xl font-extrabold dark:text-white text-center">Form Pengajuan <span class="underline underline-offset-3 decoration-8 decoration-red-600 dark:decoration-yellow-600"> Izin Terlambat Masuk & Pulang</span></h3>
   </div>
 
   <div class="flex flex-wrap">
@@ -73,63 +73,34 @@
               </div>
             </div>
             
-            <!-- Radio Button Jenis Cuti  -->
+            <!-- Radio Button Jenis Izin Pulang  -->
             <div class="mt-6">
-              <h3 class="mb-4 font-semibold text-gray-900 dark:text-white">Jenis Cuti  <span class="text-red-700 font-extrabold dark:text-white"> *</span></h3>
+              <h3 class="mb-4 font-semibold text-gray-900 dark:text-white">Jenis Izin  <span class="text-red-700 font-extrabold dark:text-white"> *</span></h3>
               <ul class="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                   <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                       <div class="flex items-center pl-3">
                           <input id="horizontal-list-radio-license" type="radio" value="" name="list-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                          <label for="horizontal-list-radio-license" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Cuti Tahunan </label>
+                          <label for="horizontal-list-radio-license" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Terlambat Masuk</label>
                       </div>
                   </li>
                   <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
                       <div class="flex items-center pl-3">
                           <input id="horizontal-list-radio-id" type="radio" value="" name="list-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                          <label for="horizontal-list-radio-id" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Cuti Besar</label>
-                      </div>
-                  </li>
-                  <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                      <div class="flex items-center pl-3">
-                          <input id="horizontal-list-radio-test" type="radio" value="" name="list-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                          <label for="horizontal-list-radio-test" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Hamil</label>
-                      </div>
-                  </li>
-                  <li class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
-                      <div class="flex items-center pl-3">
-                          <input id="horizontal-list-radio-millitary" type="radio" value="" name="list-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                          <label for="horizontal-list-radio-millitary" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Haid</label>
+                          <label for="horizontal-list-radio-id" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Pulang Cepat</label>
                       </div>
                   </li>
                   <li class="w-full dark:border-gray-600">
                       <div class="flex items-center pl-3">
                           <input id="horizontal-list-radio-passport" type="radio" value="" name="list-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                          <label for="horizontal-list-radio-passport" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Khusus</label>
+                          <label for="horizontal-list-radio-passport" class="py-3 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Pribadi Antara Jam Kerja</label>
                       </div>
                   </li>
               </ul>
             </div>
             
-            <!-- Date Picker Range Tanggal izin  -->
-          <h4 class="font-semibold mb-2 mt-4">Tanggal Cuti <span class="text-red-700 font-extrabold dark:text-white">*</span></h4>
-          <div date-rangepicker class="flex items-center">
-            <div class="relative">
-              <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
-              </div>
-              <input name="start" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date start">
-            </div>
-            <span class="mx-4 text-gray-500">to</span>
-            <div class="relative">
-              <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                  <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
-              </div>
-              <input name="end" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date end">
-            </div>
-          </div>
 
             <!-- Total Sisa Cuti & Cuti Yang Diambil  -->
-            <div class="grid gap-8 mt-6 md:grid-cols-6">
+            <!-- <div class="grid gap-8 mt-6 md:grid-cols-6">
                 <div>
                     <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sisa Cuti</label>
                     <input type="text" id="first_name" class="bg-gray-50 w-24 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="6 hari" required>
@@ -138,7 +109,14 @@
                     <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cuti Diambil</label>
                     <input type="text" id="first_name" class="bg-gray-50 w-24 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="6 hari" required>
                 </div>
+            </div> -->
+
+            <!-- Forn Alasan Izin  -->
+            <div class="mt-3">
+              <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Alasan</label>
+              <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Tulis alasan izin disini. . ."></textarea>
             </div>
+
 
 
         <!-- Button Submit Izin      -->
@@ -192,7 +170,7 @@
 <!-- Form End  -->
 
 <!-- Footer Start  -->
-<footer class="fixed p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 bottom-0 left-0 z-20 w-full mt-5">
+<footer class=" p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 bottom-0 left-0 z-20 w-full mt-5">
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">Yohana</a>. Demi Final Project Gais.
     </span>
     <!-- <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">

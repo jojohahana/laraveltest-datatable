@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-import DateRangePicker from 'flowbite-datepicker/DateRangePicker';
 
 /*
  |--------------------------------------------------------------------------

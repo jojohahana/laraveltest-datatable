@@ -17,7 +17,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/dash', function () {
-    return view('testdash');
+    return view('izin_pulang');
 });
 
 Route::get('sakit', [PermitController::class, 'getIzinSakit'])->name('formSakit');
@@ -25,3 +25,6 @@ Route::get('sakit', [PermitController::class, 'getIzinSakit'])->name('formSakit'
 
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 
+Route::get('/', function () {
+    return view('welcome');
+});
